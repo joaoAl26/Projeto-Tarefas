@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(39, 39, 39);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form{
+    background-color:#4376d4;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgb(70, 193, 224);
+    margin: 200px auto;
+}

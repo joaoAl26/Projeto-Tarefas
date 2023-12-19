@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "GothamMedium";
+    src: url(/font/GothamMedium.ttf);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(39, 39, 39);
+    font-family: "GothamMedium";
+    text-align: center;
+}
+#title{
+    color: #ffffff;
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+.signin{
+    background-color:#4376d4;
+    width: 25%;
+    left: 50%;
+    right: 80%;
+    text-align: center;
+    align-self: center;
+    border-radius: 0.5cm;
+}
+#btn{
+    background-color: rgb(181, 134, 226);
+    color: black;
+    border-radius: 0.5cm;
+}
