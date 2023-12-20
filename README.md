@@ -21,7 +21,7 @@ Portal do Administrador:
 
 ## Funcionalidades
 Criador de Tarefas:
-![task](https://github.com/joaozin11/Projeto-Tarefas/assets/83031228/c9cdabc0-80f0-41c6-b43e-75fffe5fc2be)
+![task](https://github.com/joaozin11/Projeto-Tarefas/assets/83031228/da827fb9-4162-496c-bc13-4390e6a5b88b)
 
 Lista de Usuários:
 ![lista_users](https://github.com/joaozin11/Projeto-Tarefas/assets/83031228/c0ce7fba-4d28-47e9-8d44-7687dd3e5c8d)
