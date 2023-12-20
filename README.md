@@ -27,7 +27,8 @@ Lista de Usuários:
 ![lista_users](https://github.com/joaozin11/Projeto-Tarefas/assets/83031228/c0ce7fba-4d28-47e9-8d44-7687dd3e5c8d)
 
 Visualizador de Clima:
-![api](https://github.com/joaozin11/Projeto-Tarefas/assets/83031228/ea0c06d2-e954-4203-a591-8b7e7914e707)
+![sql](https://github.com/joaozin11/Projeto-Tarefas/assets/83031228/863a8bf7-3f0f-4753-8012-e871ca61d457)
+
 
 
 
