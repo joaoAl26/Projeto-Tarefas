@@ -17,7 +17,7 @@
             <div class="navigation_header" id="navigation_header">
              <a href="editar_usuario.php">Editar Usuários</a>
              <br>
-             <a href="criar_tarefa.php">Adicionar Tarefa</a> 
+             <a href="criar_tarefa.php">Adicionar Tarefas</a> 
              <br>
              <a href="perfil.php"> Seu Perfil</a> 
             </div>
@@ -64,8 +64,9 @@ $conexao->close();
          ?>
 	</table>
 </div>
-    <h2>Funcionalidades exclusivas de Administrador(a)</h2> <a href="lista_usuarios.php">Lista de Usuários</a>
+    <h2>Funcionalidade exclusiva de Administrador(a): <a href="lista_usuarios.php">Lista de Usuários</a></h2>
 <br>
+<a href="api.php">Clima</a>
 <br>
 <br>
 <a href="logout.php">Sair</a>

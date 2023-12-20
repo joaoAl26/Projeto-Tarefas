@@ -17,7 +17,7 @@
                 <div class="navigation_header" id="navigation_header">
                     <a href="editar_usuario.php">Editar Usuário</a>
                     <br>
-                    <a href="criar_tarefa.php">Adicionar Tarefa</a>
+                    <a href="criar_tarefa.php">Adicionar Tarefas</a>
                     <br>
                     <a href="perfil.php">Seu Perfil</a>
                 </div>
@@ -65,10 +65,11 @@ $conexao->close();
          ?>
     </table>
  </div>
-
+<a href="api.php">Clima</a>
     <br>
     <br>
     <br>
+    
     <a href="logout.php">Sair</a>
 </body>
 

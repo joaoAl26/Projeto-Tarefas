@@ -18,7 +18,7 @@ class User {
             $hashed_senha = password_hash($senha, PASSWORD_DEFAULT);
 
             // Insira no banco de dados
-            $stmt = $this->conn->prepare("INSERT INTO tbuser (nome, email, senha, genero, tipoUsu) VALUES (:nomefull, :nomeUsu :senha , :genero, :0");
+            $stmt = $this->conn->prepare("INSERT INTO tbuser (nome, email, senha, genero, tipoUsu) VALUES (:nome, :email, :senha , :genero, :0");
             $stmt->bindParam(':nome', $nome);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':genero', $genero);

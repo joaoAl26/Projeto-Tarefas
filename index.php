@@ -24,6 +24,8 @@
                 <h1>Senha</h1>
                 <input type="text" name="senha">
                 <br>
+                <br>
+                <br>
             </form>
             </div>
             <button id="entrar"><a href="portal_user.php"><h2>Entrar</h2></a></button>
