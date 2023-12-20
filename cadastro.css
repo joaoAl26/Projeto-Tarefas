@@ -1,13 +1,12 @@
 @font-face {
     font-family: "GothamMedium";
     src: url(/font/GothamMedium.ttf);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
     background-color: rgb(39, 39, 39);
-    font-family: "GothamMedium";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-}
+
 #title{
     color: #ffffff;
 }
@@ -30,4 +29,5 @@ body{
     background-color: rgb(181, 134, 226);
     color: black;
     border-radius: 0.5cm;
+}
 }

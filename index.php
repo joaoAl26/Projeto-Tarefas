@@ -18,16 +18,14 @@
         <h1 id="title">Login</h1>
         <div class="centered login">
             <div class="box">
-                <form action="login.php">
+                <form id="form" action="login.php">
                 <h1>E-mail</h1>
                 <input type="text" name="email" > 
                 <h1>Senha</h1>
                 <input type="text" name="senha">
                 <br>
-                <br>
             </form>
             </div>
-            <br>
             <button id="entrar"><a href="portal_user.php"><h2>Entrar</h2></a></button>
             <h1 id="cadastro">Não tem uma conta?<a href="cadastro.php"> Cadastre-se</a></h1>
         </div>

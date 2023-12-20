@@ -19,7 +19,7 @@
                     <br>
                     <a href="criar_tarefa.php">Adicionar Tarefa</a>
                     <br>
-                    <a href="perfil.php"> Seu Perfil</a>
+                    <a href="perfil.php">Seu Perfil</a>
                 </div>
             </ul>
         </nav>
@@ -29,7 +29,8 @@
     <br>
     <h2 id="oi">Bem vindo(a) ao portal do Usuário</h2>
     <br>
-    <h1>Lista de Tarefas</h1>
+    <h1 id="list">Lista de Tarefas</h1>   
+    <div id="box">
     <table class="tabela">
         <tr>
             <th>ID</th>
@@ -54,7 +55,6 @@ if ($resultado->num_rows > 0) {
         echo "<td><a href='editar_tarefa.php?idTask='" . $linha['idTask'] .">Editar</a></td>";
         echo"<td><a href='excluir_tarefa.php?idTask='"  . $linha['idTask'] .">Excluir</a></td>";
         echo "</tr>";
-
     }
 
 } else {
@@ -62,29 +62,10 @@ if ($resultado->num_rows > 0) {
 }
 
 $conexao->close();
-
-
-
-/*
-        include("config.php");
-        $sql = "SELECT * FROM tbtask";
-        $result = $conn->query($sql);
-         var_dump($result->num_rows);
-         exit();
-
-        if ($result->num_rows > 0) {
-
-            while ($row = $result->fetch_assoc()) {
-
-                echo "<tr>";
-                echo "<td>" . $row['idTask'] . "</td>";
-                echo "<td>" . $row['nome'] . "</td>";
-                echo "<td>" . $row['data'] . "</td>";
-                echo "<td><a href='editar_tarefa.php?id=' . $row[id] .>Editar</a> | <a href='excluir_tarefa.php ?id=" . $row['id'] . ">Excluir</a></td>";
-                echo "</tr>";
-            }*/
          ?>
     </table>
+ </div>
+
     <br>
     <br>
     <br>

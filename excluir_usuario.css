@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(39, 39, 39);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    margin: 200px auto;
+    background-color:#4376d4;
+    height:10cm;
+    width: 10cm;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 10px #B0E0E6; 
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-style: oblique;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.botao{
+    background-color:rgb(189, 129, 204);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}

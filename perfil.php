@@ -25,8 +25,6 @@ $email = $_SESSION["email"];
 	<p>ID: <?php echo $id; ?></p>
 	<p>Nome: <?php echo $nome; ?></p>
 	<p>Email: <?php echo $email; ?></p>
-	<p><a href="editar_usuario.php">Editar Cadastro</a></p>
-	<p><a href="excluir_usuario.php">Excluir Cadastro</a></p>
 	</form> 
 </body>
 </html>

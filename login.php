@@ -12,6 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($user->login($email, $senha)) {
         header("Location: 'portal.php");
         exit();
+    } if ($user->login($email, $senha)) {
+        header("Location: 'portal.php");
+        exit();
     } else {
         echo "Login falhou. Verifique suas credenciais.";
     }

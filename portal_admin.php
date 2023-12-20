@@ -29,11 +29,12 @@
     <br>
     <h2 id="oi">Bem vindo(a) ao portal do Administrador</h2>
     <br>
-    <h1>Lista de Recados</h1>
-    <table>
+    <h1 id="list">Lista de Recados</h1>
+    <div id="box">
+    <table class="tabela">
 		<tr>
 			<th>ID</th>
-			<th>Recado</th>
+			<th>Tarefa</th>
 			<th>Data</th>
 		</tr>
         <?php
@@ -62,6 +63,7 @@ if ($resultado->num_rows > 0) {
 $conexao->close();
          ?>
 	</table>
+</div>
     <h2>Funcionalidades exclusivas de Administrador(a)</h2> <a href="lista_usuarios.php">Lista de Usuários</a>
 <br>
 <br>

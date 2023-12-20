@@ -36,6 +36,23 @@ body{
   text-align: center;
   
  }
-
-
+ #list{
+  text-align: center;
+ }
+ .tabela{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+ }
+#box{
+    margin: 20px auto;
+    background-color:#a390e8;
+    height:7.5cm;
+    width: 7.5cm;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+ }
 }

@@ -5,28 +5,48 @@
 	<link rel="stylesheet" href="lista_usuarios.css">
 </head>
 <body>
-	<h1>Lista de Usuários</h1>
-	<table>
+	<h1 id="list">Lista de Usuários</h1>
+	<div id="box">
+	<table class="tabela">
 		<tr>
 			<th>ID</th>
 			<th>Nome</th>
 			<th>Email</th>
+			<th>Senha</th>
+			<th>Genero</th>
+			<th>Tipo de Usuário</th>
+			<th>Ações</th>
 		</tr>
 		<?php
-        include("config.php");
-         $sql = "select * from User";
-         $result = $connn->query($sql) or die($connn->error);
-		
-		while ($row = mysqli_fetch_assoc($result)) {
-			echo "<tr>";
-			echo "<td>" . $row['id'] . "</td>";
-			echo "<td>" . $row['nome'] . "</td>";
-			echo "<td>" . $row['email'] . "</td>";
-			echo "<td><a href='editar_usuario.php?id=" . $row['id'] . "'>Editar</a> | <a href='excluir_usuario.php?id=" . $row['id'] . "'>Excluir</a></td>";
-			echo "</tr>";
-		}
-		?>
+include("config.php");
+
+$sql = "SELECT * FROM tbuser";
+$resultado = $conexao->query($sql);
+
+if ($resultado->num_rows > 0) {
+ 
+    while ($linha = $resultado->fetch_assoc()) {
+       // echo "<li>{$linha['nome']}</li>";
+        echo "<tr>";
+        echo "<td>" . $linha['idUser'] . "</td>";
+        echo "<td>" . $linha['nome'] . "</td>";
+        echo "<td>" . $linha['email'] . "</td>";
+		echo "<td>" . $linha['senha'] . "</td>";
+		echo "<td>" . $linha['genero'] . "</td>";
+		echo "<td>" . $linha['tipoUsu'] . "</td>";
+        echo "<td><a href='editar_usuario.php?idTask='" . $linha['idUser'] .">Editar</a></td>";
+        echo"<td><a href='excluir_usuario.php?idTask='"  . $linha['idUser'] .">Excluir</a></td>";
+        echo "</tr>";
+    }
+
+} else {
+    echo "Nenhum usuário encontrado.";
+}
+
+$conexao->close();
+         ?>
 	</table>
-	<a href="criar_usuario(admin).php">Adicionar Usuário</a>
+</div>
+	<a href="criar_usuario_admin_.php">Adicionar Usuário</a>
 </body>
 </html>
